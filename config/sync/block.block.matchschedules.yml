@@ -1,0 +1,25 @@
+uuid: 8b3cd6c1-755b-479d-8163-ace2b1732eac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:match_schedule:9f867ddf-b62b-43db-a636-6cffc602f050'
+  module:
+    - block_content
+  theme:
+    - premier_league
+id: matchschedules
+theme: premier_league
+region: sidebar_right
+weight: -4
+provider: null
+plugin: 'block_content:9f867ddf-b62b-43db-a636-6cffc602f050'
+settings:
+  id: 'block_content:9f867ddf-b62b-43db-a636-6cffc602f050'
+  label: 'Match Schedules'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

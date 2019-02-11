@@ -1,0 +1,14 @@
+uuid: 0b62c929-6a57-4c9d-8489-a870789122be
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_admin
+  module:
+    - user
+id: user_remove_role_action.news_admin
+label: 'Remove the News Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: news_admin

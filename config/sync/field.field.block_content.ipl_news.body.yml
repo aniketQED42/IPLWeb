@@ -1,0 +1,22 @@
+uuid: 825c79ce-34ac-489b-9ac2-ac3bf75513db
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ipl_news
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.ipl_news.body
+field_name: body
+entity_type: block_content
+bundle: ipl_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

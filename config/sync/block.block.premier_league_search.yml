@@ -1,0 +1,22 @@
+uuid: 01e86e44-56a3-4953-9d71-038443cf8086
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - premier_league
+_core:
+  default_config_hash: eG9oK8j9uKqoLZxekVaUPOm546bu9X2UGinN4IsAJeQ
+id: premier_league_search
+theme: premier_league
+region: sidebar_right
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

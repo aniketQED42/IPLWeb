@@ -1,0 +1,19 @@
+uuid: e27fed8b-0038-4bc8-85e7-983f3a5c4cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_owner
+    - node.type.team
+id: node.team.field_owner
+field_name: field_owner
+entity_type: node
+bundle: team
+label: Owner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

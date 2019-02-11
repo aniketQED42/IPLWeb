@@ -1,0 +1,19 @@
+uuid: 8608c0d7-6556-4892-a1ec-44c1f0d0250d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_playertext
+    - node.type.player
+id: node.player.field_playertext
+field_name: field_playertext
+entity_type: node
+bundle: player
+label: PlayerText
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

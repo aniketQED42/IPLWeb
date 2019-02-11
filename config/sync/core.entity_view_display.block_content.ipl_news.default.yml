@@ -1,0 +1,22 @@
+uuid: 205e0eea-89fa-440d-a15b-6c746b70297e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ipl_news
+    - field.field.block_content.ipl_news.body
+  module:
+    - text
+id: block_content.ipl_news.default
+targetEntityType: block_content
+bundle: ipl_news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: e91aede8-2043-48a5-a193-7a4250eec25a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_admin
+  module:
+    - user
+id: user_add_role_action.news_admin
+label: 'Add the News Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: news_admin

@@ -1,0 +1,22 @@
+uuid: 795ffcaa-df96-4b56-a489-d096f736f76c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.match_schedule
+    - field.field.block_content.match_schedule.body
+  module:
+    - text
+id: block_content.match_schedule.default
+targetEntityType: block_content
+bundle: match_schedule
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

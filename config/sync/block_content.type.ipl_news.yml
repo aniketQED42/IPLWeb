@@ -1,0 +1,8 @@
+uuid: d26809ed-f5c6-423d-a4d2-d5d6aa72fc75
+langcode: en
+status: true
+dependencies: {  }
+id: ipl_news
+label: 'IPL News'
+revision: 0
+description: ''

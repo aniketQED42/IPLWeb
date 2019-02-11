@@ -1,0 +1,38 @@
+uuid: 40606442-aa57-4703-8752-c8325185f1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_playerimage
+    - node.type.player
+  module:
+    - image
+id: node.player.field_playerimage
+field_name: field_playerimage
+entity_type: node
+bundle: player
+label: PlayerImage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

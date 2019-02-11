@@ -1,0 +1,32 @@
+uuid: 8459fdc2-aa0b-43f5-9646-3d8011361caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.match_schedule
+    - field.field.block_content.match_schedule.body
+  module:
+    - text
+id: block_content.match_schedule.default
+targetEntityType: block_content
+bundle: match_schedule
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,13 @@
+uuid: e1765673-eca2-4f44-b422-38fbafc2ac50
+langcode: en
+status: true
+dependencies: {  }
+id: team_admin
+label: 'Team Admin'
+weight: 4
+is_admin: null
+permissions:
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit any player content'
+  - 'edit own team content'

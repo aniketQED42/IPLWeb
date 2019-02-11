@@ -1,0 +1,22 @@
+uuid: 776d7573-cb38-434a-98ba-777e6183f2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.match_schedule
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.match_schedule.body
+field_name: body
+entity_type: block_content
+bundle: match_schedule
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
