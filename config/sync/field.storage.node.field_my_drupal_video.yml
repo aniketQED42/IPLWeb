@@ -1,18 +1,16 @@
-uuid: 6e23329c-0448-478a-a8ab-a10ae3e066e3
+uuid: 8d522440-6130-40ab-bebd-0c7ac9623f92
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - taxonomy
-_core:
-  default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
-id: node.field_tags
-field_name: field_tags
+id: node.field_my_drupal_video
+field_name: field_my_drupal_video
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
 cardinality: -1

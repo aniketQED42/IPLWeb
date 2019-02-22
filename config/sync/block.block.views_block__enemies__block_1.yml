@@ -1,0 +1,31 @@
+uuid: 807838f1-4c3d-4987-8839-1b7877f2cd44
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.enemies_
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__enemies__block_1
+theme: bartik
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:enemies_-block_1'
+settings:
+  id: 'views_block:enemies_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

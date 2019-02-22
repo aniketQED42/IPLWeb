@@ -1,0 +1,28 @@
+uuid: e173b712-56d8-4af8-a6cf-b5a395e6dc1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.groups.field_name
+    - node.type.groups
+  module:
+    - user
+id: node.groups.default
+targetEntityType: node
+bundle: groups
+mode: default
+content:
+  field_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

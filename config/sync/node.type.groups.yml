@@ -1,0 +1,18 @@
+uuid: 32dd5812-e993-480a-bcb7-4e23ec0b07a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Groups
+type: groups
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

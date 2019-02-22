@@ -10,33 +10,24 @@ dependencies:
     - node.type.player
   module:
     - image
-    - text
     - user
 id: node.player.teaser
 targetEntityType: node
 bundle: player
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_playerimage:
     type: image
-    weight: 2
+    weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
   field_playertext:
     type: string
-    weight: 3
+    weight: 2
     region: content
     label: above
     settings:
@@ -47,4 +38,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true

@@ -1,0 +1,24 @@
+uuid: 06176db5-99b2-42a1-af0e-c84f09f8bfd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_players
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__top_players_block_1
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:top_players-block_1'
+settings:
+  id: 'views_block:top_players-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

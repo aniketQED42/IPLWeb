@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.player.field_playertext
     - node.type.player
   module:
-    - image
+    - slick
     - text
     - user
 id: node.player.default
@@ -28,9 +28,44 @@ content:
     label: above
     settings:
       image_style: ''
-      image_link: ''
+      optionset: default
+      skin: ''
+      cache: 0
+      current_view_mode: ''
+      style: ''
+      iframe_lazy: true
+      icon: ''
+      layout: ''
+      thumbnail_style: ''
+      view_mode: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+      breakpoints: {  }
+      caption: {  }
+      media_switch: ''
+      ratio: ''
+      responsive_image_style: ''
+      sizes: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      overridables: {  }
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: 0
     third_party_settings: {  }
-    type: image
+    type: slick_image
     region: content
   field_playertext:
     weight: 103
@@ -42,7 +77,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

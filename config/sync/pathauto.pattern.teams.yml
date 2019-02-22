@@ -1,0 +1,22 @@
+uuid: 28a9640c-107a-4eca-8e48-80dec7cf7ea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: teams
+label: teams
+type: 'canonical_entities:node'
+pattern: 'teams/[node:title]'
+selection_criteria:
+  8430e78b-a0eb-4bb2-bb0d-466233d637a9:
+    id: node_type
+    bundles:
+      team: team
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8430e78b-a0eb-4bb2-bb0d-466233d637a9
+selection_logic: and
+weight: -5
+relationships: {  }

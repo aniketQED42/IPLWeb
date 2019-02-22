@@ -1,0 +1,28 @@
+uuid: 19009e7c-96e8-4752-9ee1-8e38a1367a27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_drupal_video
+    - media.type.remote_video
+    - node.type.article
+id: node.article.field_my_drupal_video
+field_name: field_my_drupal_video
+entity_type: node
+bundle: article
+label: 'My Drupal Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

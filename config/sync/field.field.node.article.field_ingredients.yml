@@ -1,0 +1,21 @@
+uuid: 6355a2f7-388b-4741-a3bf-2174520b483e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredients
+    - node.type.article
+  module:
+    - text
+id: node.article.field_ingredients
+field_name: field_ingredients
+entity_type: node
+bundle: article
+label: Ingredients
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

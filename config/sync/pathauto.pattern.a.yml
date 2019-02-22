@@ -1,0 +1,22 @@
+uuid: 7fe08a40-a8d4-44a0-a698-b264d917c016
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: a
+label: players
+type: 'canonical_entities:node'
+pattern: 'article/[node:title]'
+selection_criteria:
+  fadbeaeb-8376-43bc-bfc2-f41023862203:
+    id: node_type
+    bundles:
+      player: player
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fadbeaeb-8376-43bc-bfc2-f41023862203
+selection_logic: and
+weight: -5
+relationships: {  }

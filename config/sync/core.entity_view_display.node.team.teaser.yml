@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.team.body
     - field.field.node.team.field_img
     - field.field.node.team.field_owner
+    - field.field.node.team.field_team
     - image.style.thumbnail
     - node.type.team
   module:
@@ -21,7 +22,7 @@ content:
     type: image
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: thumbnail
       image_link: ''
@@ -41,3 +42,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_team: true
