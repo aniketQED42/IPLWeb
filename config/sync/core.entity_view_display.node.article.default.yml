@@ -9,12 +9,201 @@ dependencies:
     - field.field.node.article.field_ingredients
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_my_drupal_video
+    - field.field.node.article.field_paragraph
+    - field.field.node.article.layout_builder__layout
     - node.type.article
   module:
+    - entity_reference_revisions
+    - field_group
     - image
+    - layout_builder
+    - layout_discovery
     - metatag
     - text
     - user
+third_party_settings:
+  field_group:
+    group_tab1:
+      children:
+        - group_video
+        - group_tab2
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        label: Tab1
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Tab1
+      region: content
+    group_tab2:
+      children:
+        - field_image
+      parent_name: group_tab1
+      weight: 22
+      format_type: tab
+      format_settings:
+        label: Image
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+      label: Image
+      region: content
+    group_video:
+      children:
+        - field_my_drupal_video
+      parent_name: group_tab1
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Video
+      region: content
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          085f6990-ff0e-4928-b643-1c73efc3c039:
+            uuid: 085f6990-ff0e-4928-b643-1c73efc3c039
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:body'
+              formatter:
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
+          ac4ddacb-e71e-4b0d-8ae8-547a023acbc7:
+            uuid: ac4ddacb-e71e-4b0d-8ae8-547a023acbc7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:flag_bookmark'
+            additional: {  }
+            weight: 1
+          54673f2a-6753-4c28-8dc2-f38a1b5b59f8:
+            uuid: 54673f2a-6753-4c28-8dc2-f38a1b5b59f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 2
+          717899e5-e41b-40ac-a85e-2c148f3d33c7:
+            uuid: 717899e5-e41b-40ac-a85e-2c148f3d33c7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_ingredients'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+          1fb45451-2bda-4224-bf42-71f7e104adc7:
+            uuid: 1fb45451-2bda-4224-bf42-71f7e104adc7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_cuisine'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 4
+          57a5d5a2-7034-4ff1-a97a-193742f60c6d:
+            uuid: 57a5d5a2-7034-4ff1-a97a-193742f60c6d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_meta_tags'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: metatag_empty_formatter
+            additional: {  }
+            weight: 5
+          e53ddb4a-a7fb-40b0-980e-44308f3dd6e8:
+            uuid: e53ddb4a-a7fb-40b0-980e-44308f3dd6e8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_paragraph'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 6
+          2e44b4f6-f336-4263-be89-5b27254699f2:
+            uuid: 2e44b4f6-f336-4263-be89-5b27254699f2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_image'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 7
+          ecc5ce93-8c85-4442-9a9b-731972892cc6:
+            uuid: ecc5ce93-8c85-4442-9a9b-731972892cc6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_my_drupal_video'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 8
+    allow_custom: true
+    enabled: true
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -30,7 +219,7 @@ content:
     third_party_settings: {  }
     label: hidden
   field_cuisine:
-    weight: 112
+    weight: 4
     label: above
     settings:
       link: true
@@ -38,7 +227,7 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 113
+    weight: 22
     label: above
     settings:
       image_style: ''
@@ -47,14 +236,14 @@ content:
     type: image
     region: content
   field_ingredients:
-    weight: 111
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_meta_tags:
-    weight: 115
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -62,21 +251,31 @@ content:
     region: content
   field_my_drupal_video:
     type: entity_reference_entity_view
-    weight: 114
+    weight: 23
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: inline
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   flag_bookmark:
-    weight: 10
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
