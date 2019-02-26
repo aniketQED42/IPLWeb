@@ -9,8 +9,12 @@ dependencies:
     - node.type.news_article
   module:
     - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.news_article.teaser
 targetEntityType: node
 bundle: news_article
@@ -19,23 +23,19 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   field_news_image:
     type: image
-    weight: 1
+    weight: 0
     region: content
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

@@ -1,0 +1,7 @@
+configform:
+  path: '/configform'
+  defaults: 
+    _title: 'Application Form'
+    _form: 'Drupal\configform\Form\SimpleSettingForm' 
+  requirements: 
+    _permission: 'access content'  

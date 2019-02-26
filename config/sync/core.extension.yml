@@ -70,6 +70,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  userform: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0

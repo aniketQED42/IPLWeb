@@ -1,0 +1,5 @@
+name: Custom userform
+type: module
+description: Form to accept user info
+package: custom
+core: 8.x

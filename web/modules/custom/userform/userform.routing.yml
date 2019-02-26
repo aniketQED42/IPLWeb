@@ -1,0 +1,7 @@
+configform:
+  path: '/userform'
+  defaults: 
+    _title: 'Application Form'
+    _form: 'Drupal\userform\Form\SimpleSettingForm' 
+  requirements: 
+    _permission: 'access content'  
