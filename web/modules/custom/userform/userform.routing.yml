@@ -13,3 +13,11 @@ configform.simpleform:
     _form: 'Drupal\userform\Form\SimpleFormBase'
   requirements:
     _permission: 'access content'
+
+configform.hello:
+  path: '/simpleform'
+  defaults:
+    _title: 'Simple Application Form'
+    _controller: 'Drupal\userform\Controller\HelloController::content'
+  requirements:
+    _permission: 'access content'
