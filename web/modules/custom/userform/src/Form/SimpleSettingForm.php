@@ -25,20 +25,27 @@ class SimpleSettingForm extends ConfigFormBase {
       '#default_value' => $config->get('name')
     ];
 
-    $form['addr'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('addr'),
-      '#default_value' => $config->get('addr')
+    $form['email'] = [
+      '#type' => 'email',
+      '#title' => $this->t('email'),
+      '#default_value' => $config->get('email')
     ];
 
    return parent::buildForm($form, $form_state);
+  }
+
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    $name = $form_state->getValue('name');
+    if(!preg_match("/^([a-zA-Z' ]+)$/",$name)){
+      $form_state->setErrorByName('name',$this->t('Invaid Name!'));
+    }
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
     $this->config('userform.settings')
       ->set('name',$form_state->getValue('name'))
-      ->set('addr',$form_state->getValue('addr'))
+      ->set('email',$form_state->getValue('email'))
       ->save();
     parent::submitForm($form, $form_state);
   }

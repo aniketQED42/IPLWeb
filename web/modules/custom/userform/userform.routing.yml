@@ -4,4 +4,12 @@ configform:
     _title: 'Application Form'
     _form: 'Drupal\userform\Form\SimpleSettingForm' 
   requirements: 
-    _permission: 'access content'  
+    _permission: 'access content'
+
+configform.simpleform:
+  path: '/simpleform'
+  defaults:
+    _title: 'Simple Application Form'
+    _form: 'Drupal\userform\Form\SimpleFormBase'
+  requirements:
+    _permission: 'access content'
