@@ -15,9 +15,25 @@ configform.simpleform:
     _permission: 'access content'
 
 configform.hello:
-  path: '/simpleform'
+  path: '/helloworld'
   defaults:
-    _title: 'Simple Application Form'
+    _title: 'Simple Hello World'
     _controller: 'Drupal\userform\Controller\HelloController::content'
   requirements:
     _permission: 'access content'
+
+configform.hellodynamic:
+  path: '/helloname/{name}'
+  defaults:
+    _title: 'Dynamic Name Route'
+    _controller: 'Drupal\userform\Controller\HelloDynamic::content'
+  requirements:
+    _permission: 'access hello route'
+
+configform.parameterupcasting:
+  path: '/para/{nodeid}'
+  defaults:
+    _title: 'Parameter Upcasting'
+    _controller: 'Drupal\userform\Controller\ParameterUpcasting::content'
+  requirements:
+    _permission: 'access hello route'

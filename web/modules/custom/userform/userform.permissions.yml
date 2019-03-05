@@ -1,0 +1,4 @@
+access hello route:
+  title: 'Access Hello Route'
+  description: 'My Config Module Permission.'
+  restrict access: TRUE
