@@ -68,7 +68,16 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: default
+        type: grid
+        options:
+          uses_fields: false
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: 'entity:node'
         options:
@@ -180,7 +189,8 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       path: ipl-teams
       menu:
         type: normal

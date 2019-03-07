@@ -31,7 +31,7 @@ configform.hellodynamic:
     _permission: 'access hello route'
 
 configform.parameterupcasting:
-  path: '/para/{nodeid}'
+  path: '/para/{node}'
   defaults:
     _title: 'Parameter Upcasting'
     _controller: 'Drupal\userform\Controller\ParameterUpcasting::content'
