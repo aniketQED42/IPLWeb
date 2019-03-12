@@ -1,0 +1,21 @@
+uuid: b309453b-319c-4e51-86a1-135399c650be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sites
+    - node.type.page
+  module:
+    - text
+id: node.page.field_sites
+field_name: field_sites
+entity_type: node
+bundle: page
+label: Sites
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

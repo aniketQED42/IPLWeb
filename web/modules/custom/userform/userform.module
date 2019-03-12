@@ -1,0 +1,37 @@
+<?php
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_insert() for node entities.
+ *
+ * This tests saving a node on node insert.
+ *
+ * @see \Drupal\node\Tests\NodeSaveTest::testNodeSaveOnInsert()
+ */
+function userform_node_insert(NodeInterface $node) {
+  // Set the node title to the node ID and save.
+  if ($node->getType() == 'page') {
+      $title = $node->getTitle();
+      $title = preg_replace('/[^A-Za-z0-9\- ]/', '', $title);
+      $title = preg_replace('/^\s+|\s+$|\s+(?=\s)/', '', $title);
+      $title = str_replace(' ', '_', $title);
+      $title = strtolower($title);
+      $node->set('field_sites' , $title)->save();    
+  }
+}
+
+//Printing all the user nodes in logs while that user is updated.
+function userform_entity_presave(EntityInterface $entity){
+    $uid = $entity->id();
+    // \Drupal::logger('userform')->notice('UID : '. $uid);
+  $query = \Drupal::entityQuery('node')  //Query
+  ->condition('uid', $uid)->execute();
+  $node = \Drupal\node\Entity\Node::loadMultiple($query);
+  foreach($node as $q){
+    \Drupal::logger('userform')->notice('Title : '. $q->title->value);
+  }
+}
+
+     

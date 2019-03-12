@@ -1,0 +1,20 @@
+uuid: 3a8abb39-3323-46c8-bfdd-a10668eb4a4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_sites
+field_name: field_sites
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
